@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html> 
+    <head> 
+        <title>AYLOUFLIX</title>
+        <meta charset="utf-8" /> 
+        <link rel="stylesheet" href="style.css"> 
+        <link rel="icon" type="image/png" sizes="32x32" href="image/logo/logo.png">
+    </head>
+
+    <body> 
+        <div class="Titlesite"> 
+            <h1 class="Title"> AYLOUFLIX </h1>  
+            <h2 class="slogan"> Le meilleur du site de streaming </h2>
+
+            <br>
+
+            <div class="nav_bar"> 
+                <nav > 
+                    <li><a href="index.html" class="button_navbar"> Home </a></li>
+                    <li><a href="films.html" class="button_navbar"> Films </a></li>
+                    <li><a href="series.html" class="button_navbar"> Series </a></li>
+                    <li><a href="apropo.html" class="button_navbar"> A propos </a></li>
+                </nav>
+            </div>
+
+        </div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <div class="affiche_catalogue">
+
+            <div class="content_catalogue">
+                <h3> Choisissez la catégorie de SERIES qui vous fait plaisir !</h3>  
+
+                <select id="Select" class="select">
+                    <option value="">Genre</option>
+                    <option value="aventure">Aventure</option>
+                    <option value="action">Action</option>
+                    <option value="romance">Romance</option>
+                </select>
+            </div>
+        </div> 
+
+        <script>
+            const select = document.getElementById('Select')
+
+            select.addEventListener('change', (event) => {
+                document.querySelectorAll('.hidden_categorie').forEach(AllCategories => AllCategories.style.display = 'none');
+
+                const cible = document.getElementById('hidden_categorie_' + event.target.value);
+                if (cible) {
+                    cible.style.display = 'block';
+                }
+            });
+        </script>
+        
+        <!-- Categorie Aventure -->
+
+         <div class="hidden_categorie" id="hidden_categorie_aventure"> 
+            <h3> Aventure ! </h3>
+
+            <li> <a href="series/UnePiece/UnePiece.html"> <div class="Affiche"> <img src="image/affiche/UnePiece.png"> </div> </a> </li>
+            <li> <a href="series/TheWalkingLife/TheWalkingLife.html"> <div class="Affiche"> <img src="image/affiche/TheWalkingLife.png"> </div> </a> </li>
+         </div>
+
+
+         <!-- Categorie Action -->
+
+         <div class="hidden_categorie" id="hidden_categorie_action"> 
+            <h3> Action ! </h3>
+
+            <li> <a href="series/BreakingGood/BreakingGood.html"> <div class="Affiche"> <img src="image/affiche/BreakingGood.png"> </div> </a> </li>
+            <li> <a href="series/TheWalkingLife/TheWalkingLife.html"> <div class="Affiche"> <img src="image/affiche/TheWalkingLife.png"> </div> </a> </li>
+            <li> <a href="series/LaCasaDePapi/LaCasaDePapi.html"> <div class="Affiche"> <img src="image/affiche/LaCasaDePapi.png"> </div> </a> </li>
+            <li> <a href="series/UnePiece/UnePiece.html"> <div class="Affiche"> <img src="image/affiche/UnePiece.png"> </div> </a> </li>
+         </div>
+
+         <!-- Categorie Romance -->
+
+        <div class="hidden_categorie" id="hidden_categorie_romance"> 
+            <h3> Romance ! </h3>
+
+            <li> <a href="series/PascalDoesDream/PascalDoesDream.html"> <div class="Affiche"> <img src="image/affiche/PascalDoesDream.png"> </div> </a> </li>
+         </div>
+
+    </div>
+</html>

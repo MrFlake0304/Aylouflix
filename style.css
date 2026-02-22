@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap');
+
+
+body{
+    background-color: #080808;
+    font-family: "Bebas Neue", sans-serif;
+    padding-left: 20px;
+    position: relative;
+}
+
+
+/* Accueil */
+
+
+div.Titlesite{
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    background-color: #030303;
+    z-index: 10;
+
+}
+
+h1.Title{
+    font-size: 200px;
+    color: #e50914;   
+    margin: 0;       
+    line-height: 1;
+}
+
+h2{
+    color: #e50914;
+    text-align: center;
+}
+
+.slogan{
+    margin-top: -20px;
+}
+
+.nav_bar{
+    align-items: flex-end; 
+
+}
+
+li{
+    display: inline-block;
+    align-items: flex-end; 
+    
+}
+
+a.button_navbar{
+    text-decoration: none;
+    display: flex;
+    align-items: flex-end; 
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    color: aliceblue;
+    font-size: 25px;
+    transition: tranform 0.3s ease;
+    
+}
+
+
+a.button_navbar:hover{
+    color: #dddddd;
+    transform: scale(1.05);
+}
+
+
+p{
+    color: #fff;   
+    font-family: "Martel Sans", sans-serif;
+    font-size: 25px;
+}
+
+h3{
+    color: #fff;  
+    font-size: 40px;    
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.Affiche{
+    display: inline-block;
+    align-items: flex-end; 
+    padding: 50px;
+}
+
+.Affiche img{
+    height: 280px;
+    width: 200px;
+    border-radius: 10px;
+    transition: tranform 0.3s ease;
+    opacity: 1;
+}
+
+.Affiche img:hover{
+    transform: scale(1.05);
+}
+
+
+.recommandation {
+    position: relative;
+    background: url('fond_recommandation.png') center / cover no-repeat;
+}
+
+.recommandation::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.recommandation > * {
+    position: relative;
+    z-index: 1;
+}
+
+.recommandation h1{
+    color: #fff;
+    padding-left: 25px;
+    padding-top: 25px;
+    font-size: 40px;   
+}
+
+
+.presentation_texte{
+    border-left: solid #e50914;
+    padding-left: 15px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    height: 100%;
+    width: 75%;
+}
+ 
+
+/* Page Film */
+
+.Titlefilm{
+    font-size: 100px;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.Box_film{
+    background-color: #030303; /* ou #1a1a1a */
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 10;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 3px;
+
+}
+
+.synopsis{
+    padding-left: 25px;
+    padding-top: 25px;
+    width: 50%;
+    height: 500px;
+}
+.texte_synopsis{
+    color: #fff;
+    font-size: 22px;
+    font-family: "Google Sans Flex", sans-serif;
+}
+
+.img_box_film{
+    padding-left: 25px;
+    padding-top: 25px;
+    width: 50%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+
+}
+
+.img_box_film img{
+    width: 80%; 
+    border-radius: 10px;
+
+}
+
+.img_box_film a{
+    background-color: #fff;
+    width: 300px;        
+    height: 80px;     
+    border-radius: 10px;
+    text-decoration: none;
+    margin-top: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 50px;
+    color: #030303;
+
+    transition: tranform 0.3s ease;
+}
+
+.img_box_film a:hover{
+    background-color: #dddddd;
+    transform: scale(1.05);
+}
+
+
+.background_img_film {
+    position: relative;
+
+}
+
+.background_img_film::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.background_img_film > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* contact btn */ 
+
+.contact_button {
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+
+    padding-bottom: 10px;  
+    padding-top: 10px;     
+    padding-left: 20px;
+    padding-right: 20px;
+
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    
+    border-radius: 4px;
+    transition: tranform 0.3s ease;
+}
+
+.contact_button:hover {
+    background-color: #b20710;
+    transform: scale(1.05);
+}
+
+.content_caché {
+    display: none;
+    margin-top: 15px;
+    color: #fff;
+    background: #1a1a1a;
+    padding: 15px;
+    border-left: solid #E50914;
+    font-style: italic;
+    border-radius: 10px;
+}
+
+
+
+/* film */
+
+.affiche_catalogue{
+    background: url('affiche_catalogue.png');
+    position: relative;
+    height: 500px;
+}
+
+.affiche_catalogue::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.affiche_catalogue > *{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;   
+    text-align: center;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+
+.hidden_categorie{
+    background-color: #080808;
+    display: none;
+    border-left: solid #E50914;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+
+select {
+    font-family: "Bebas Neue", sans-serif;
+    background-color: #252525;
+    border-radius: 8px;
+    border-color: #030303;
+    padding: 10px 40px 10px 15px;
+    font-size: 16px;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+
+    transition: tranform 0.3s ease;
+}
+
+select:hover {
+    border-color: #E50914;
+    transform: scale(1.05);
+}
