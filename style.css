@@ -73,13 +73,13 @@ a.button_navbar:hover{
 
 
 p{
-    color: #fff;   
+    color: #f5f2ed;   
     font-family: "Martel Sans", sans-serif;
     font-size: 25px;
 }
 
 h3{
-    color: #fff;  
+    color: #f5f2ed;  
     font-size: 40px;    
     font-family: "Bebas Neue", sans-serif;
 }
@@ -121,7 +121,7 @@ h3{
 }
 
 .recommandation h1{
-    color: #fff;
+    color: #f5f2ed;
     padding-left: 25px;
     padding-top: 25px;
     font-size: 40px;   
@@ -165,7 +165,7 @@ h3{
     height: 500px;
 }
 .texte_synopsis{
-    color: #fff;
+    color: #f5f2ed;
     font-size: 22px;
     font-family: "Google Sans Flex", sans-serif;
 }
@@ -189,7 +189,7 @@ h3{
 }
 
 .img_box_film a{
-    background-color: #fff;
+    background-color: #f5f2ed;
     width: 300px;        
     height: 80px;     
     border-radius: 10px;
@@ -233,7 +233,7 @@ h3{
 
 .contact_button {
     background-color: #e50914;
-    color: #fff;
+    color: #f5f2ed;
     border: none;
 
     padding-bottom: 10px;  
@@ -257,7 +257,7 @@ h3{
 .content_caché {
     display: none;
     margin-top: 15px;
-    color: #fff;
+    color: #f5f2ed;
     background: #1a1a1a;
     padding: 15px;
     border-left: solid #E50914;
@@ -309,7 +309,7 @@ select {
     border-color: #030303;
     padding: 10px 40px 10px 15px;
     font-size: 16px;
-    color: #ffffff;
+    color: #f5f2ed;
     cursor: pointer;
     outline: none;
 
