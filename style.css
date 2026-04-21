@@ -5,10 +5,17 @@
 body{
     background-color: #080808;
     font-family: "Bebas Neue", sans-serif;
-    padding-left: 20px;
     position: relative;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
+main{
+    margin-left: 5%;
+    margin-right: 5%;
+}
 
 /* Accueil */
 
@@ -18,15 +25,16 @@ div.Titlesite{
     position: fixed;
     top: 0;
     left: 0;
+    right: 0;
     width: 100%;
+    height: fit-content;
     color: white;
     background-color: #030303;
     z-index: 10;
-
 }
 
 h1.Title{
-    font-size: 200px;
+    font-size: 220px;
     color: #e50914;   
     margin: 0;       
     line-height: 1;
@@ -38,7 +46,8 @@ h2{
 }
 
 .slogan{
-    margin-top: -20px;
+    font-size: 25px;
+    margin: 0;
 }
 
 .nav_bar{
@@ -131,12 +140,88 @@ h3{
 .presentation_texte{
     border-left: solid #e50914;
     padding-left: 15px;
-    background-color: #1a1a1a;
+    background-color: #0F0F0F;
     border-radius: 10px;
     height: 100%;
     width: 75%;
 }
  
+
+hr{
+    border: 1px solid #1a1a1a;
+    width: 80%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.footer {
+    display: flex;
+    align-items: flex-start;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.footer a{
+    font-size: 50px;
+    margin: 20px;
+    color: #E50914;
+    text-decoration: none;
+}
+
+.footer-text {
+    width: 50%;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column; 
+}
+
+.footer-text a {
+    width: fit-content;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.footer-text a:hover{
+    transform: scale(1.05);
+}
+
+
+.footer-icones{
+    width: 50%;
+}
+
+.footer-icones i{
+    transition: tranform 0.3s ease;
+}
+
+.footer-icones i:hover{
+    transform: scale(1.05);
+}
+
+footer{
+    top: 0;
+    left: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background: #0F0F0F;
+    border-top: 1px solid #1a1a1a;
+    padding: 2rem 3rem;
+    text-align: center;
+    font-size: 0.78rem;
+    color: #AAAAAA;
+}
+
+footer h1{
+    font-size: 50px;
+    color: #E50914;
+}
+
+.sous-text-footer{
+    font-size: 15px;
+    opacity: 0.5;
+}
+
 
 /* Page Film */
 
@@ -152,9 +237,11 @@ h3{
     border-radius: 10px;
     overflow: hidden;
     z-index: 10;
-    margin-right: 30px;
     margin-left: 30px;
     margin-bottom: 3px;
+    margin-left: 5%;
+    margin-right: 5%;
+    
 
 }
 
@@ -214,6 +301,7 @@ h3{
 
 .background_img_film {
     position: relative;
+    padding-bottom: 100px;
 
 }
 
@@ -258,7 +346,7 @@ h3{
     display: none;
     margin-top: 15px;
     color: #f5f2ed;
-    background: #1a1a1a;
+    background: #0F0F0F;
     padding: 15px;
     border-left: solid #E50914;
     font-style: italic;
@@ -295,11 +383,15 @@ h3{
 
 
 .hidden_categorie{
-    background-color: #080808;
+    background-color: #0F0F0F;
     display: none;
     border-left: solid #E50914;
     padding-left: 10px;
     border-radius: 10px;
+    
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
 }
 
 select {
@@ -322,3 +414,59 @@ select:hover {
 }
 
 
+/* Conditions d'utilisation */
+
+.warning{
+    width: 45%;
+    margin-left: 5%;
+
+    border-left: solid #e50914;
+    border-radius: 10px;
+    background-color: #0F0F0F;
+    
+    padding-left: 15px;
+    padding-bottom: 0.2px;
+}
+
+.liste{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 10;
+}
+
+ul.liste li {
+    padding: 0.4rem 0;
+    padding-left: 1.4rem;
+    position: relative;
+    font-family: 'arial', serif;
+    font-size: 1rem;
+    color: #E50914;
+}
+
+ul.liste li::before {
+    position: absolute;
+    left: 0;
+    font-size: 0.8rem;
+    top: 0.5rem;
+}
+
+.article{
+    padding-top: 20px;
+    margin-bottom: 5%;
+}
+
+.article h2 {
+    color: #e50914;
+    text-align: left;
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+.article h3{
+    font-size: 40px;
+}
+
+.text_article_conditionsut{
+    margin-left: 10px;
+}
