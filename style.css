@@ -416,13 +416,25 @@ select:hover {
 
 /* Conditions d'utilisation */
 
+.first_warning{
+    width: 45%;
+    margin-left: 5%;
+
+    border-left: solid #e50914;
+    border-radius: 10px;
+    background-color: #120000;
+    
+    padding-left: 15px;
+    padding-bottom: 0.2px;
+}
+
 .warning{
     width: 45%;
     margin-left: 5%;
 
     border-left: solid #e50914;
     border-radius: 10px;
-    background-color: #0F0F0F;
+    background-color: #020000;
     
     padding-left: 15px;
     padding-bottom: 0.2px;
@@ -470,3 +482,26 @@ ul.liste li::before {
 .text_article_conditionsut{
     margin-left: 10px;
 }
+
+/* Mention légales */
+
+.tableau {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #0F0F0F;
+    border: 1px solid #1a1a1a;
+    border-radius: 8px;
+
+    color: #f5f2ed;
+}
+
+.info_tableau{
+    background: #0F0F0F;
+    padding: 1rem 1.25rem;
+}
+
+.label {
+    font-size: 15px;
+    color: var(--gris-texte);
+    font-family: 'Syne', sans-serif;
+  }
