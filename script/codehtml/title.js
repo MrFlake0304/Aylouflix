@@ -7,7 +7,7 @@ document.querySelector('header').innerHTML = `
 
         <div class="nav_bar"> 
             <nav > 
-                <li><a href="index.html" class="button_navbar"> Home </a></li>
+                <li><a href="home.html" class="button_navbar"> Home </a></li>
                 <li><a href="films.html" class="button_navbar"> Films </a></li>
                 <li><a href="series.html" class="button_navbar"> Series </a></li>
                 <li><a href="apropo.html" class="button_navbar"> A propos </a></li>

@@ -24,7 +24,7 @@ document.querySelector('.footer_script').innerHTML = `
                 <div>
                     <h1>AYLOUFLIX</h1>
                     <p>© 2024 AYLOUFLIX - Tous droits réservés sur des œuvres qui n'existent pas.</p>
-                    <p>67 rue de Vitality, 75001 Paris | contact@aylouflix.fr</p>
+                    <p>67 rue de Aylouflix, 75001 Paris | contact@aylouflix.fr</p>
                     <p class="sous-text-footer">Projet éducatif SNT — Document fictif à but pédagogique</p>
                 </div>
             </footer>

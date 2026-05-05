@@ -73,3 +73,7 @@ p{
     font-size: 25px;
 }
 
+.error_msg{
+    display: none;
+    color: #e50914;
+}
