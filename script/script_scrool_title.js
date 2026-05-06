@@ -12,4 +12,4 @@ window.addEventListener('scroll', function() {
             slogan.style.fontSize = '25px'
             titre.style.transition = 'font-size 0.3s ease';
         }
-    });
+});

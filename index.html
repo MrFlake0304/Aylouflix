@@ -19,16 +19,7 @@
 
         <script>
             function verifierConnexion() {
-                const email = document.getElementById("email").value.trim();
-                const password = document.getElementById("password").value.trim();
-                const errorMsg = document.getElementById("error_msg");
-
-                if (email === "" || password === "") {
-                    errorMsg.style.display = "block";
-                } else {
-                    errorMsg.style.display = "none";
-                    window.location.href = "home.html"
-                }
+                window.location.href = "home.html"
             }
         </script>
     </body>
